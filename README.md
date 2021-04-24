@@ -102,14 +102,24 @@ Rendered `TestTimingDiagram.puml`:
 
 ## Notes / Ramblings
 
-Originally was going to use Java and rely on a convenient feature of JDK 11:
-[JEP 330: Launch Single-File Source-Code Programs](https://openjdk.java.net/jeps/330).
+- _**This thing is far from complete.
+See [TODO.md](TODO.md).**_
 
-The only reason I've decided to use CSharp (`C#.NET 5`) is because it supports JSON natively...
+- Originally was going to use Java and rely on a convenient feature of JDK 11:
+[JEP 330: Launch Single-File Source-Code Programs](https://openjdk.java.net/jeps/330).  
+The only reason I've decided to use CSharp (C#.NET 5) is because it supports JSON natively...
 also because I wanted to get used to C# and get familiar with new APIs and language features.
 
-This thing is far from complete.
-See [TODO.md](TODO.md).
+- (Was) being developed using JetBrains Rider on Kubuntu 18.04 x64. Rider's **About**:
+```
+JetBrains Rider 2021.1.2
+For educational use only.
+Linux 5.4.0-72-generic
+.NET Core 5.0.5
+Non-Bundled Plugins: PlantUML integration (5.2.0), [...]
+
+[...]
+```
 
 
 ## License
