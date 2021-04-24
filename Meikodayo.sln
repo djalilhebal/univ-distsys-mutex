@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meikodayo", "Meikodayo\Meikodayo.csproj", "{29F6DF33-850E-4ADC-9E4A-E30DD04B393A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteProcess", "SiteProcess\SiteProcess.csproj", "{20E2ED51-A707-416F-979E-27A1095CFF17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29F6DF33-850E-4ADC-9E4A-E30DD04B393A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F6DF33-850E-4ADC-9E4A-E30DD04B393A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F6DF33-850E-4ADC-9E4A-E30DD04B393A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F6DF33-850E-4ADC-9E4A-E30DD04B393A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E2ED51-A707-416F-979E-27A1095CFF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E2ED51-A707-416F-979E-27A1095CFF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E2ED51-A707-416F-979E-27A1095CFF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E2ED51-A707-416F-979E-27A1095CFF17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

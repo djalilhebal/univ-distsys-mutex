@@ -1,0 +1,68 @@
+@startuml
+
+' --- Constants ---
+
+' étati ∈ {dehors, demandeur, dedans}
+!$dehors = "Dehors #yellowgreen"
+!$demandeur = "Demandeur #yellow"
+!$dedans =  "Dedans #tomato"
+
+
+' --- Variables ---
+
+concise "Site<sub>i</sub>" as Sitei
+concise "Site<sub>j</sub>" as Sitej
+concise "Site<sub>k</sub>" as Sitek
+
+' All timestamps will be relative to this timestamp
+!$_scenarioStarted = 0 - 365
+
+!$message1SentToi = $_scenarioStarted + 365
+!$message1ReceivedByi = $_scenarioStarted + 800
+
+!$message1SentTok = $_scenarioStarted + 365
+!$message1ReceivedByk = $_scenarioStarted + 800
+
+!$message2Sent = $_scenarioStarted + 850
+!$message2Received = $_scenarioStarted + 1000
+
+!$message3Sent = $message1ReceivedByi + 300
+!$message3Received = 1250
+
+
+' --- Site i ---
+
+@0
+Sitei is $dehors
+
+@1000
+Sitei is $demandeur
+
+@3000
+Sitei is $dedans
+
+@3500
+Sitei is {-}
+
+Sitei@$message3Sent -> Sitej@$message3Received : OK
+
+
+' --- Site j ---
+
+Sitej@$message1SentToi -> Sitei@$message1ReceivedByi : Go?
+Sitej@$message1SentTok -> Sitek@$message1ReceivedByk : Go?
+
+@1250
+Sitej is $dedans
+
+@0
+Sitej is $demandeur
+
+
+' --- Site k ---
+
+Sitek is $dehors
+
+Sitek@$message2Sent -> Sitej@$message2Received : OK
+
+@enduml
